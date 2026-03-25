@@ -116,14 +116,59 @@ Notes
 The Bank Marketing dataset uses ; as the separator, so it is handled correctly in ingest.py.
 The preprocessing script was tested successfully and produced the expected output files.
 The remaining project files will be completed by other team members.
-Next Steps
 
-The remaining parts to be completed are:
 
-analytics.py
-visualize.py
-cluster.py
-Dockerfile
-summary.sh
-final documentation update
+### visualize.py
+
+This script is responsible for generating visual insights from the preprocessed dataset.
+
+It creates multiple plots to help understand customer behavior, including:
+
+* Histogram showing the distribution of customer age
+* Correlation heatmap between numerical features
+* Boxplots comparing balance and call duration with respect to subscription outcome
+
+The script uses libraries such as Matplotlib and Seaborn for visualization.
+
+Output generated:
+
+* `summary_plot.png`
+
+---
+
+### cluster.py
+
+This script applies clustering techniques to group customers based on their characteristics.
+
+It uses the K-Means algorithm to cluster customers using selected numerical features such as:
+
+* age
+* balance
+* duration
+
+The model groups customers into 3 clusters and outputs the number of samples in each cluster along with cluster centers.
+
+Output generated:
+
+* `clusters.txt`
+
+---
+
+## Updated Outputs
+
+After including visualization and clustering, the pipeline now generates:
+
+* data_raw.csv
+* data_preprocessed.csv
+* summary_plot.png
+* clusters.txt
+
+---
+
+## Note
+
+The remaining components (analytics.py, Dockerfile, summary.sh, and final documentation updates) are to be completed as part of the remaining project work.
+
+
+
 
