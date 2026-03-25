@@ -1,0 +1,3 @@
+Average call duration for subscribers: 1.08
+Average call duration for non-subscribers: -0.14
+Subscribers have -754.8% longer calls

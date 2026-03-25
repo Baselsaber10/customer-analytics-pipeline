@@ -1,0 +1,7 @@
+Subscription rate by age group:
+age_group
+young     16.29
+adult     10.24
+middle     9.00
+senior    13.44
+Name: y, dtype: float64
