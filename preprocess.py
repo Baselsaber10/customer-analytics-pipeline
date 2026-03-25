@@ -10,7 +10,7 @@ if len(sys.argv) < 2:
 
 # Load dataset
 try:
-    bank_data = pd.read_csv(sys.argv[1])
+    bank_data = pd.read_csv(sys.argv[1], sep=';')
 except Exception as e:
     print(f"Error reading input file: {e}")
     sys.exit(1)
